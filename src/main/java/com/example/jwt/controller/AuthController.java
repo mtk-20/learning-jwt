@@ -19,6 +19,7 @@ public class AuthController {
         this.tokenService = tokenService;
     }
 
+    //get token
     @PostMapping("/token")
     public String token(Authentication authentication) {
         log.debug("Token requested for user: '{}' " + authentication.getName());
